@@ -17,14 +17,12 @@ public class BST {
 		root = operations.insert(root, 13);
 		
 		operations.searchNode(root, 13);
-		
 		operations.searchNode(root, 23);
-		
 		operations.searchNode(root, 1);
-		
 		operations.searchNode(root, 10);
-		
 		operations.searchNode(root, 2);
+		
+		root = operations.deleteNode(root, 10);
 	}
 }
 
@@ -41,6 +39,63 @@ class BSTOperations {
 		return node;
 	}
 	
+	public Node deleteNode(Node root, int value) {
+		
+		if (root == null) {
+			
+			System.out.println("Node not found.");
+			return null;
+		}
+		
+		if (root.value < value) {
+			
+			root.rightChild = deleteNode(root.rightChild, value);
+			
+		} else if (root.value > value) {
+			
+			root.leftChild = deleteNode(root.leftChild, value);
+			
+		} else {
+			
+			if (root.leftChild != null && root.rightChild == null) {
+				
+				root = root.leftChild;
+				
+			} else if (root.leftChild == null && root.rightChild != null) {
+				
+				root = root.rightChild;
+				
+			} else if (root.leftChild == null && root.rightChild == null) {
+				
+				root = null;
+				
+			} else {
+				
+				Node temp = root;
+				
+				Node minValueNodeInRightSubTree = minimumElement(temp.rightChild);
+				
+				root.value = minValueNodeInRightSubTree.value;
+				
+				root.rightChild = deleteNode(root.rightChild, minValueNodeInRightSubTree.value);
+			}
+		}
+		
+		return root;
+	}
+	
+    public Node minimumElement(Node root) {
+    	
+        if (root.leftChild == null) {
+        	
+        	return root;
+        	
+        } else {
+        	
+            return minimumElement(root.leftChild);
+        }
+    }
+    
 	public Node insert(Node node, int value) {
 		
 		if (node == null) {
@@ -60,19 +115,20 @@ class BSTOperations {
 		return node;
 	}
 	
-	public void searchNode(Node root, int value) {
+	public boolean searchNode(Node root, int value) {
 		
 		if (root == null) {
 			
 			System.out.println("404 Not found");
-			return;
+			return false;
 		}
 		
 		if (root.value == value) {
 			
 			System.out.println("200");
-			
-		} else if (root.value < value) {
+		} 
+		
+		if (root.value < value) {
 			
 			searchNode(root.rightChild, value);
 			
@@ -80,6 +136,8 @@ class BSTOperations {
 			
 			searchNode(root.leftChild, value);
 		}
+		
+		return true;
 	}
 }
 
