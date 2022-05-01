@@ -1,5 +1,3 @@
-package com.test.java;
-
 import java.util.Arrays;
 
 public class Stack 
