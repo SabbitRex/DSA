@@ -1,10 +1,19 @@
+import java.util.LinkedList;
+import java.util.Map;
+import java.util.Queue;
+import java.util.TreeMap;
+
 public class BinaryTree {
+	
+	TreeMap<Integer, Integer> map = new TreeMap<Integer, Integer>();
 	
 	class Node {
 		
 		int data;
 		Node left;
 		Node right;
+		
+		int height = 0; // To be used when printing top view.
 	}
 
 	public Node createNewNode(int data) {
@@ -55,6 +64,48 @@ public class BinaryTree {
 		System.out.print(root.data + " ");
 	}
 	
+	public void topView(Node root) {
+		
+		if (root == null) {
+			
+			return;
+		}
+		
+		Queue<Node> queue = new LinkedList<Node>();
+		
+		queue.add(root);
+		
+		while (!queue.isEmpty()) {
+			
+			Node node = queue.poll();
+			int h = node.height;
+			
+			if (this.map.get(h) == null) {
+				
+				this.map.put(h, node.data);
+			}
+			
+			if (node.left != null) {
+				
+				node.left.height = h - 1;
+				queue.add(node.left);
+			}
+			
+            if (node.right != null) {
+				
+            	node.right.height = h + 1;
+				queue.add(node.right);
+			}
+		}
+		
+		System.out.println("Top view : ");
+		
+	    for (Map.Entry<Integer, Integer> itr : map.entrySet()) {
+	    	
+	    	System.out.print(itr.getValue() + " ");
+	    }
+	}
+	
 	public static void main(String[] args) {
 		
 		BinaryTree binaryTree = new BinaryTree();
@@ -81,5 +132,8 @@ public class BinaryTree {
 	    
 	    System.out.println("Post : ");
 	    binaryTree.postOrder(root);
+	    
+	    System.out.println();
+	    binaryTree.topView(root);
 	}
 }
