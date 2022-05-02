@@ -24,7 +24,7 @@ public class BinaryTree {
 		newNode.left = null;
 		newNode.right = null;
 		
-		return newNode;
+		return newNode; 
 	}
 	
 	public void preOrder(Node root) {
