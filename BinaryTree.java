@@ -1,6 +1,8 @@
+import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.Map;
 import java.util.Queue;
+import java.util.Set;
 import java.util.TreeMap;
 
 public class BinaryTree {
@@ -122,6 +124,7 @@ public class BinaryTree {
 			int queueSize = queue.size();
 			
 			if (queueSize == 0) {
+				
 				break;
 			}
 			
@@ -147,6 +150,50 @@ public class BinaryTree {
 			System.out.println();
 		}
 	}
+	
+	public void leftView(Node root) {
+		
+		if (root == null) {
+			
+			return;
+		}
+		
+		Queue<Node> queue = new LinkedList<Node>();
+		
+		Set<Integer> hight = new HashSet<>();
+		
+		queue.add(root);
+		
+		while (true) {
+			
+			int queueSize = queue.size();
+			
+			while (queueSize > 0) {
+				
+				Node current = queue.poll();
+				int h = current.height;
+				
+				if (hight.add(h)) {
+					
+					System.out.println(current.data + " ");
+				}
+				
+				if (current.left != null) {
+					
+					current.left.height = h + 1;
+					queue.add(current.left);
+				}
+				
+				if (current.right != null) {
+					
+					current.right.height = h + 1;
+					queue.add(current.right);
+				}
+				
+				queueSize--;
+			}
+		}
+	}
 
 	public static void main(String[] args) {
 
@@ -162,24 +209,27 @@ public class BinaryTree {
 		root.right.right = binaryTree.createNewNode(9);
 		root.right.right.left = binaryTree.createNewNode(4);
 
-		System.out.println("Pre : ");
+		System.out.println("Pre order : ");
 		binaryTree.preOrder(root);
+		System.out.println("\n");
 
-		System.out.println();
-
-		System.out.println("In : ");
+		System.out.println("In order : ");
 		binaryTree.inOrder(root);
+		System.out.println("\n");
 
-		System.out.println();
-
-		System.out.println("Post : ");
+		System.out.println("Post order : ");
 		binaryTree.postOrder(root);
-
-		System.out.println();
+		System.out.println("\n");
+		
 		binaryTree.topView(root);
+		System.out.println("\n");
 		
-		System.out.println();
-		
+		System.out.println("Level order : ");
 		binaryTree.levelOrder(root);
+		System.out.println("\n");
+		
+		System.out.println("Left View : ");
+		binaryTree.leftView(root);
+		System.out.println();
 	}
 }
