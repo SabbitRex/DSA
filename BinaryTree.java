@@ -233,6 +233,14 @@ public class BinaryTree {
 		binaryTree.levelOrder(root);
 		System.out.println("\n");
 		
+//		Node root = binaryTree.createNewNode(1);
+//		root.left = binaryTree.createNewNode(2);
+//		root.right = binaryTree.createNewNode(3);
+//		root.right.left = binaryTree.createNewNode(5);
+//		root.right.right = binaryTree.createNewNode(6);
+//		root.right.left.left = binaryTree.createNewNode(7);
+//		root.left.left = binaryTree.createNewNode(4);
+		
 		System.out.println("Left View : ");
 		binaryTree.leftView(root);
 		System.out.println();
