@@ -1,2 +1,4 @@
 # DSA
-Data structures and algorithms
+Data structures and algorithms, implentated in Java.
+
+
