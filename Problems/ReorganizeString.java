@@ -1,4 +1,4 @@
-public class ReorganizeArray {
+public class ReorganizeString {
 
 	public static String reorganizeString(String s) {
 
