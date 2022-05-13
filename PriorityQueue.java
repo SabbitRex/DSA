@@ -22,7 +22,8 @@ public class PriorityQueue {
 		
 		if (sizeUsed == 0) {
 			
-			array[sizeUsed++] = priority;
+			array[sizeUsed] = priority;
+			sizeUsed++;
 			return;
 		}
 		
