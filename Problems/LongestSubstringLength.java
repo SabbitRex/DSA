@@ -3,7 +3,7 @@ class LongestSubstringLength {
     public int lengthOfLongestSubstring(String s) {
         
         if (s.isEmpty()) {
-            
+           
             return 0;
         }
         
