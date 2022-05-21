@@ -8,7 +8,7 @@ class FindPeakInArray {
         
         while (left < right) {
             
-            int mid = left + (right - left)/2;
+            int mid = (left + right)/2;
             
             if (nums[mid] < nums[mid + 1]) {
                 
