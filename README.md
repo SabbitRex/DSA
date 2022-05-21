@@ -4,9 +4,9 @@ Hey everyone, I'm Sharad ☃, and I'm a Software Engineer 💻 at eGain!
 
 This repository📝is all about data structures & algorithms and my solutions to problems on leetcode.
 
-👉 Check out my leetcode profile https://leetcode.com/sharaddutta/
+👉 Check out my LeetCode profile https://leetcode.com/sharaddutta/
 
-👉 Check out my linkedin profile https://www.linkedin.com/in/sharadduttasrm/
+👉 Check out my LinkedIn profile https://www.linkedin.com/in/sharadduttasrm/
 
 If you ❤ this repository📝, don't forget to ⭐ it.
 
