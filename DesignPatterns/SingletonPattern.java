@@ -55,7 +55,7 @@ class SingletonSynchronizedMethodInit {
 	
 	public void someMethod() {
 		
-		System.out.println("SyncMethod");
+		System.out.println("SyncMethod"); 
 	}
 }
 
