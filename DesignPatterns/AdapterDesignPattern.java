@@ -19,8 +19,6 @@ class ChromeDriver implements WebDriver {
 		
 		System.out.println("Select Element : Chrome Driver");
 	}
-	
-	
 }
 
 class FireFoxDriver {
@@ -56,7 +54,6 @@ class WebDriverAdapter implements WebDriver {
 		
 		this.fireFoxDriver.chooseElement();
 	}
-	
 }
 
 public class AdapterDesignPattern {
