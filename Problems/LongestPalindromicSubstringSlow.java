@@ -21,7 +21,7 @@ public class LongestPalindromicSubstringSlow {
                 
                 temp = temp + str[j];
                 
-                boolean isPalindrome = checkPalindrome(temp);
+                boolean isPalindrome = temp.equals(new StringBuffer(temp).reverse().toString());
                 
                 if (isPalindrome) {
                 	
@@ -45,22 +45,6 @@ public class LongestPalindromicSubstringSlow {
         }
         
         return result;
-    }
-    
-    private static boolean checkPalindrome(String str) {
-        
-    	String reverseStr = "";
-    	
-        for (int i = (str.length() - 1); i >=0; --i) {
-            reverseStr = reverseStr + str.charAt(i);
-        }
-        
-        if (str.toLowerCase().equals(reverseStr.toLowerCase())) {
-        	
-        	return true;
-        }
-        
-        return false;
     }
     
     public static void main(String[] args) {
