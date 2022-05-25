@@ -13,7 +13,7 @@
  *     }
  * }
  */
-class ValidateForBinarySearchTree {
+class ValidateIfBinarySearchTree {
     
     List<Integer> list= new ArrayList<>();
     
