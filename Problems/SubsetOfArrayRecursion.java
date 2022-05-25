@@ -1,4 +1,4 @@
-class SubsetOfArray {
+class SubsetOfArrayRecursion {
     
     List<List<Integer>> result = new ArrayList<>();
     
