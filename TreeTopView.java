@@ -44,6 +44,11 @@ public class TreeTopView {
 			
 			int queueSize = queue.size();
 			
+			if (queueSize == 0) {
+				
+				break;
+			}
+			
 			while (queueSize > 0) {
 				
 				Node current = queue.poll();
