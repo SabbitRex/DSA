@@ -13,3 +13,6 @@ If you ❤ this repository📝, don't forget to ⭐ it.
 Have a doubt? start a discussion here ✍ https://github.com/SabbitRex/DSA/discussions
 
 NOTE : If you see a mistake, bring it up in the discussion or create a pull request.
+
+
+Check curated list of [most important 75 leetcode questions.](https://www.teamblind.com/post/New-Year-Gift---Curated-List-of-Top-75-LeetCode-Questions-to-Save-Your-Time-OaM1orEU)
