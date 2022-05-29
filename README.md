@@ -27,7 +27,7 @@ Check curated list of [most important 75 leetcode questions.](https://www.teambl
 - [ ] [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)
 - [ ] [Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/)
 - [ ] [Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/)
-- [ ] [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/)
+- [x] [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/)
 - [x] [3Sum](https://leetcode.com/problems/3sum/)
 - [x] [Container With Most Water](https://leetcode.com/problems/container-with-most-water/)
 
@@ -35,7 +35,7 @@ Check curated list of [most important 75 leetcode questions.](https://www.teambl
 
 ## Binary
 
-- [ ] [Sum of Two Integers](https://leetcode.com/problems/sum-of-two-integers/)
+- [x] [Sum of Two Integers](https://leetcode.com/problems/sum-of-two-integers/)
 - [ ] [Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/)
 - [ ] [Counting Bits](https://leetcode.com/problems/counting-bits/)
 - [ ] [Missing Number](https://leetcode.com/problems/missing-number/)
@@ -64,7 +64,7 @@ Check curated list of [most important 75 leetcode questions.](https://www.teambl
 - [ ] [Clone Graph](https://leetcode.com/problems/clone-graph/)
 - [ ] [Course Schedule](https://leetcode.com/problems/course-schedule/)
 - [ ] [Pacific Atlantic Water Flow](https://leetcode.com/problems/pacific-atlantic-water-flow/)
-- [ ] [Number of Islands](https://leetcode.com/problems/number-of-islands/)
+- [x] [Number of Islands](https://leetcode.com/problems/number-of-islands/)
 - [ ] [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/)
 - [ ] [Alien Dictionary (Leetcode Premium)](https://leetcode.com/problems/alien-dictionary/)
 - [ ] [Graph Valid Tree (Leetcode Premium)](https://leetcode.com/problems/graph-valid-tree/)
@@ -97,7 +97,7 @@ Check curated list of [most important 75 leetcode questions.](https://www.teambl
 
 - [ ] [Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/)
 - [ ] [Spiral Matrix](https://leetcode.com/problems/spiral-matrix/)
-- [ ] [Rotate Image](https://leetcode.com/problems/rotate-image/)
+- [x] [Rotate Image](https://leetcode.com/problems/rotate-image/)
 - [ ] [Word Search](https://leetcode.com/problems/word-search/)
 
 ---
@@ -110,7 +110,7 @@ Check curated list of [most important 75 leetcode questions.](https://www.teambl
 - [x] [Valid Anagram](https://leetcode.com/problems/valid-anagram/)
 - [x] [Group Anagrams](https://leetcode.com/problems/group-anagrams/)
 - [x] [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)
-- [ ] [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/)
+- [x] [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/)
 - [ ] [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/)
 - [x] [Palindromic Substrings](https://leetcode.com/problems/palindromic-substrings/)
 - [ ] [Encode and Decode Strings (Leetcode Premium)](https://leetcode.com/problems/encode-and-decode-strings/)
