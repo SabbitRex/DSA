@@ -35,16 +35,16 @@ class PlusOne {
         	list.add(carry);
         }
         
-        int[] result = new int[list.size()];
+        digits = new int[list.size()];
         
         int size = list.size() - 1;
         
         for (int num : list) {
             
-            result[size] = num;
+            digits[size] = num;
             size--;
         }
         
-        return result;
+        return digits;
     }
 }
