@@ -48,7 +48,7 @@ Check curated list of [most important 75 leetcode questions.](https://www.teambl
 - [ ] [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/)
 - [ ] [Coin Change](https://leetcode.com/problems/coin-change/)
 - [ ] [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/)
-- [ ] [Longest Common Subsequence](https://leetcode.com/problems/longest-common-subsequence/)
+- [x] [Longest Common Subsequence](https://leetcode.com/problems/longest-common-subsequence/)
 - [ ] [Word Break Problem](https://leetcode.com/problems/word-break/)
 - [ ] [Combination Sum](https://leetcode.com/problems/combination-sum-iv/)
 - [ ] [House Robber](https://leetcode.com/problems/house-robber/)
