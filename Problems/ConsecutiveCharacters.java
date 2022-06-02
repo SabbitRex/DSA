@@ -24,9 +24,6 @@ class ConsecutiveCharacters {
                 j++;
                 
             } else {
-                
-            	char c = s.charAt(i);
-            	int x = s.charAt(i) - 'a';
             	
                 if (count > freq[s.charAt(i) - 'a']) {
                     
