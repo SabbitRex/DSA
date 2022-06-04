@@ -1,4 +1,4 @@
-class NumberOfIslands {
+class Number_Of_Islands {
     
     public int numIslands(char[][] grid) {
         
