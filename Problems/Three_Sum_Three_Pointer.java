@@ -1,4 +1,6 @@
-class ThreeSumFast {
+# https://leetcode.com/problems/3sum/
+
+class Three_Sum_Three_Pointer {
     
     public List<List<Integer>> threeSum(int[] nums) {
         
