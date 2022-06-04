@@ -4,7 +4,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-public class ThreeSum {
+public class Three_Sum_Slow {
 	
     public static List<List<Integer>> threeSum(int[] nums) {
         
