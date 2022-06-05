@@ -1,4 +1,4 @@
-class LongestHappyString {
+class Longest_Happy_String {
 
     public String longestDiverseString(int a, int b, int c) {
         
