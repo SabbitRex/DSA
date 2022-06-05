@@ -1,4 +1,4 @@
-class LongestCommonSubsequenceBottomUp {
+class Longest_Common_Subsequence_Bottom_Up {
     
     public int longestCommonSubsequence(String text1, String text2) {
         
