@@ -1,4 +1,4 @@
-class SortColours {
+class Sort_Colours_Merge_Sort {
     
     public void sortColors(int[] nums) {
         
