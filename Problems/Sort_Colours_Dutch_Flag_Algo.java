@@ -1,6 +1,6 @@
 # https://leetcode.com/problems/sort-colors/
 
-class Sort_Colour_Dutch_Flag_Algo {
+class Sort_Colours_Dutch_Flag_Algo {
     
     public void sortColors(int[] nums) {
         
