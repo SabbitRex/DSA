@@ -1,4 +1,4 @@
-class MaxWaterTwoPointer {
+class Max_Water_Two_Pointer {
   
     public int maxArea(int[] height) {
         
