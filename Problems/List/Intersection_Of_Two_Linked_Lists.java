@@ -12,7 +12,7 @@
  
 # https://leetcode.com/problems/intersection-of-two-linked-lists/
 
-public class Intersection_Of_Two_Linked_Lists {
+class Intersection_Of_Two_Linked_Lists {
     
     public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
         
