@@ -14,9 +14,9 @@ class Daily_Temperatures_Monotonic_Stack {
                 
                 Integer[] top = monotonicStack.pop();
                 
-                int tempIndex = i - top[1];
+                int idxDif = i - top[1];
                 
-                result[top[1]] = tempIndex;
+                result[top[1]] = idxDif;
             }
             
             monotonicStack.push(new Integer[] {temperatures[i], i});
