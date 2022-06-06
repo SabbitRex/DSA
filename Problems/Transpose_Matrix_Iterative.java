@@ -1,4 +1,4 @@
-class TransposeMatrix {
+class Transpose_Matrix_Iterative {
     
     public int[][] transpose(int[][] matrix) {
         
