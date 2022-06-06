@@ -1,4 +1,6 @@
-class WarmerDays {
+# https://leetcode.com/problems/daily-temperatures/
+
+class Daily_Temperatures_Non_Linear {
 
     public int[] dailyTemperatures(int[] temps) {
         
@@ -21,6 +23,5 @@ class WarmerDays {
 		}
 		
 		return dayJumps;
-      
     }
 }
