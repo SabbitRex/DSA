@@ -1,6 +1,6 @@
 # https://leetcode.com/problems/daily-temperatures/
 
-class Daily_Temperatures {
+class Daily_Temperatures_Monotonic_Stack {
     
     public int[] dailyTemperatures(int[] temperatures) {
         
