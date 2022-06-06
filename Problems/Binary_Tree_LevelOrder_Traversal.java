@@ -13,7 +13,7 @@
  *     }
  * }
  */
-class BinaryTreeLevelOrderTraversal {
+class Binary_Tree_LevelOrder_Traversal {
     
     public List<List<Integer>> levelOrder(TreeNode root) {
         
