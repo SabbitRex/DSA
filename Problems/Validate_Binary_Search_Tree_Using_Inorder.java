@@ -13,7 +13,7 @@
  *     }
  * }
  */
-class ValidateIfBinarySearchTree {
+class Validate_Binary_Search_Tree_Using_Inorder {
     
     List<Integer> list= new ArrayList<>();
     
