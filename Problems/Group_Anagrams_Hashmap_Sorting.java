@@ -1,4 +1,4 @@
-class GroupAnagrams {
+class Group_Anagrams_Hashmap_Sorting {
 
     public List<List<String>> groupAnagrams(String[] strs) {
         
