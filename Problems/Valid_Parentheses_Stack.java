@@ -40,5 +40,5 @@ class Valid_Parentheses_Stack {
         }
         
         return false;
-    }
+    } 
 }
