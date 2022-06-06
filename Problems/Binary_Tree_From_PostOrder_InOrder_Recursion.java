@@ -14,7 +14,7 @@
  * }
  */
 
-class BinaryTreeFromPostIn {
+class Binary_Tree_From_PostOrder_InOrder_Recursion {
     
     public TreeNode buildTree(int[] inorder, int[] postorder) {
         
