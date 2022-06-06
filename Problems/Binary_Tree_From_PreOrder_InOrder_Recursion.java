@@ -13,7 +13,7 @@
  *     }
  * }
  */
-class BinaryTreeFromPreIn {
+class Binary_Tree_From_PreOrder_InOrder_Recursion {
     
     public TreeNode buildTree(int[] preorder, int[] inorder) {
         
