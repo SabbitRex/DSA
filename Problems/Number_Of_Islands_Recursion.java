@@ -1,4 +1,4 @@
-class Number_Of_Islands {
+class Number_Of_Islands_Recursion {
     
     public int numIslands(char[][] grid) {
         
