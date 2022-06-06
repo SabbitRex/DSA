@@ -1,4 +1,4 @@
-class GenerateParentheses {
+class Generate_Parentheses_Recursion {
     
     List<String> result = new ArrayList<String>();
 	
