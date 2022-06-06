@@ -1,6 +1,6 @@
 # https://leetcode.com/problems/two-sum/
 
-class Two_Sum_2Pointer {
+class Two_Sum_Two_Pointer {
     
     public int[] twoSum(int[] nums, int target) {
         
