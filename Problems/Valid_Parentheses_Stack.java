@@ -1,4 +1,4 @@
-class ValidParentheses {
+class Valid_Parentheses_Stack {
     
     public boolean isValid(String s) {
         
