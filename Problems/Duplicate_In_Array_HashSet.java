@@ -1,4 +1,4 @@
-class DuplicateInArray {
+class Duplicate_In_Array_HashSet {
     
     public int findDuplicate(int[] nums) {
         
