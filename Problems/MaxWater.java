@@ -1,4 +1,4 @@
-class MaxWater {
+class Max_Water_Brute_Force {
     
     public int maxArea(int[] height) {
         
