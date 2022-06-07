@@ -1,4 +1,4 @@
-class FirstAndLastPosition {
+class First_And_Last_Position_Two_Pointers {
 
     public int[] searchRange(int[] nums, int target) {
         
