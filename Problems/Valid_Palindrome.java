@@ -9,11 +9,9 @@ class Valid_Palindrome {
 			return true;
 		}
 
-		String[] str = s.toLowerCase().split("");
-
 		int f = 0;
 
-		int r = str.length - 1;
+		int r = s.length() - 1;
 
 		while (f < r) {
 
