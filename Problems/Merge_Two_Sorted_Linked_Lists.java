@@ -9,7 +9,7 @@
  * }
  */
 
-class MergeTwoSortedLinkedLists {
+class Merge_Two_Sorted_Linked_Lists {
     
     public ListNode mergeTwoLists(ListNode list1, ListNode list2) {
         
