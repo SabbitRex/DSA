@@ -1,4 +1,4 @@
-public class MaxContiguousSumInArray {
+public class Maximum_Subarray_Brute_Force {
 
 	public static int maxSubArray(int[] arr) {
 
@@ -29,14 +29,5 @@ public class MaxContiguousSumInArray {
 		}
 
 		return topMax;
-	}
-
-	public static void main(String[] args) {
-
-		//int[] arr = new int[] { -2, 1, -3, 4, -1, 2, 1, -5, 4 };
-
-		int[] arr = new int[] { 5, 4, -1, 7, 8 };
-
-		System.out.println(maxSubArray(arr));
 	}
 }
