@@ -1,4 +1,4 @@
-class FindEvenNumberCountInArray {
+class Find_Even_Number_Count_In_Array_Iterative_Linear {
     
     public int findNumbers(int[] nums) {
         
