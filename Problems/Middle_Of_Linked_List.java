@@ -8,7 +8,8 @@
  *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
  * }
  */
-class MiddleOfLinkedList {
+
+class Middle_Of_Linked_List {
     
     public ListNode middleNode(ListNode head) {
         
