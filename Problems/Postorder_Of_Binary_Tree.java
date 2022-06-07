@@ -14,7 +14,7 @@
  * }
  */
  
-class PostOrder {
+class Postorder_Of_Binary_Tree {
     
     List<Integer> result = new ArrayList<>();
     
