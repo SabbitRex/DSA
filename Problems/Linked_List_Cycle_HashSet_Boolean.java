@@ -9,7 +9,7 @@
  *     }
  * }
  */
-public class FindLoopInLL {
+public class Linked_List_Cycle_HashSet_Boolean {
     
     public boolean hasCycle(ListNode head) {
         
