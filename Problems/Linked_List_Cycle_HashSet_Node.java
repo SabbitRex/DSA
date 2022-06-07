@@ -9,7 +9,7 @@
  *     }
  * }
  */
-public class Find_Loop_In_Linked_List_HashSet {
+public class Linked_List_Cycle_HashSet_Node {
 
     public ListNode detectCycle(ListNode head) {
         
