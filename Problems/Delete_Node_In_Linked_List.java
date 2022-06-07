@@ -6,7 +6,11 @@
  *     ListNode(int x) { val = x; }
  * }
  */
-class DeleteNodeInLList {
+
+// You are only given the node to delete and not the head.
+// It is guaranteed that the node to be deleted is not a tail node in the list.
+
+class Delete_Node_In_Linked_List {
     
     public void deleteNode(ListNode node) {
         
@@ -18,6 +22,3 @@ class DeleteNodeInLList {
         }
     }
 }
-
-// You are only given the node to delete and not the head.
-// It is guaranteed that the node to be deleted is not a tail node in the list.
