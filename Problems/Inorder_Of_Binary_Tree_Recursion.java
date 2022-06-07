@@ -13,7 +13,7 @@
  *     }
  * }
  */
-class InOrderOfBT {
+class Inorder_Of_Binary_Tree_Recursion {
     
     List<Integer> list = new ArrayList<>();
     
