@@ -1,4 +1,4 @@
-class LongestSubstringLength {
+class Longest_Substring_Without_Repeating_Characters_Brute_Force {
     
     public int lengthOfLongestSubstring(String s) {
         
