@@ -14,7 +14,7 @@
  * }
  */
  
-class PreOrder {
+class Preorder_Of_Binary_Tree {
     
     List<Integer> result = new ArrayList<>();
     
