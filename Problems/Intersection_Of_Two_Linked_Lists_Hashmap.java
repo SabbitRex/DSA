@@ -10,7 +10,7 @@
  * }
  */
  
-public class IntersectionOfTwoLinkedLists {
+public class Intersection_Of_Two_Linked_Lists_Hashmap {
     
     public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
         
