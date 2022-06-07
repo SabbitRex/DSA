@@ -1,4 +1,4 @@
-class ImplementStrStr {
+class Implement_StrStr {
 
     public int strStr(String haystack, String needle) {
         
