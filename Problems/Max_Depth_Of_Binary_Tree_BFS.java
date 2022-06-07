@@ -13,7 +13,7 @@
  *     }
  * }
  */
-class Max_Depth_Of_Binary_Tree_BFS_Level_Order {
+class Max_Depth_Of_Binary_Tree_BFS {
 
     public int maxDepth(TreeNode root) {
         
