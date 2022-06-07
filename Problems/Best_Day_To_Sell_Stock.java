@@ -1,4 +1,4 @@
-class BestDayToSellStock {
+class Best_Day_To_Sell_Stock {
     
     public int maxProfit(int[] p) {
         
