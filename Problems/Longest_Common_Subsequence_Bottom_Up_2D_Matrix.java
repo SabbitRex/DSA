@@ -1,4 +1,4 @@
-class Longest_Common_Subsequence_Bottom_Up {
+class Longest_Common_Subsequence_Bottom_Up_2D_Matrix {
     
     public int longestCommonSubsequence(String text1, String text2) {
         
