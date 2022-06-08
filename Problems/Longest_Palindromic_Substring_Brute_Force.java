@@ -1,6 +1,6 @@
-public class LongestPalindromicSubstringSlow {
+public class Longest_Palindromic_Substring_Brute_Force {
 	
-    public static String longestPalindrome(String s) {
+    public String longest(String s) {
         
         if (s.length() == 1) {
             
@@ -46,9 +46,4 @@ public class LongestPalindromicSubstringSlow {
         
         return result;
     }
-    
-    public static void main(String[] args) {
-		
-    	System.out.println(longestPalindrome("skndaounxokanaaaaaccvccaaaaaaefgy"));
-	}
 }
