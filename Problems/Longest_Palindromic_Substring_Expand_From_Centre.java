@@ -1,6 +1,6 @@
 # https://leetcode.com/problems/longest-palindromic-substring/
 
-class Longest_Palindromic_Substring {
+class Longest_Palindromic_Substring_Expand_From_Centre {
     
     public String longestPalindrome(String s) {
         
