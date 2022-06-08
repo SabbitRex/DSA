@@ -14,7 +14,7 @@ class Longest_Palindromic_Substring_Expand_From_Centre {
             int leftOdd = i;
             int rightOdd = i;
             
-            while (leftOdd>=0 && rightOdd <s.length() && s.charAt(leftOdd) == s.charAt(rightOdd)) {
+            while (leftOdd >= 0 && rightOdd < s.length() && s.charAt(leftOdd) == s.charAt(rightOdd)) {
                 
                 if ((rightOdd - leftOdd + 1) > resultSize) {
                     
