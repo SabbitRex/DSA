@@ -1,4 +1,4 @@
-class MissingNumber {
+class Missing_Number {
     
     public int missingNumber(int[] nums) {
         
