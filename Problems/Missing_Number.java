@@ -1,32 +1,23 @@
+# https://leetcode.com/problems/missing-number/
+
 class Missing_Number {
     
     public int missingNumber(int[] nums) {
         
-        int count = nums.length;
+        int sum = 0;
         
-        int upperLimit = count;
+        int currentSum = 0;
         
-        int missingNumber = 0;
-        
-        for (int i=upperLimit; i>0; i--) {
+        for (int i=0; i<=nums.length; i++) {
             
-            boolean isPresent = false;
+            sum = sum + i;
             
-            for (int j=0; j<count; j++) {
-                    
-                if (nums[j] == i) {
-                    
-                    isPresent = true;
-                }
-            }
-            
-            if (!isPresent) {
+            if (i != nums.length) {
                 
-                missingNumber = i;
-                break;
+                currentSum = currentSum + nums[i];
             }
         }
         
-        return missingNumber;
+        return sum - currentSum;
     }
 }
