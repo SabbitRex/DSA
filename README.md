@@ -24,7 +24,7 @@ Check curated list of [most important 75 leetcode questions.](https://www.teambl
 - [x] [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)
 - [x] [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/)
 - [ ] [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/)
-- [ ] [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)
+- [x] [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)
 - [ ] [Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/)
 - [x] [Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/)
 - [x] [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/)
@@ -38,7 +38,7 @@ Check curated list of [most important 75 leetcode questions.](https://www.teambl
 - [x] [Sum of Two Integers](https://leetcode.com/problems/sum-of-two-integers/)
 - [ ] [Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/)
 - [ ] [Counting Bits](https://leetcode.com/problems/counting-bits/)
-- [ ] [Missing Number](https://leetcode.com/problems/missing-number/)
+- [x] [Missing Number](https://leetcode.com/problems/missing-number/)
 - [ ] [Reverse Bits](https://leetcode.com/problems/reverse-bits/)
 
 ---
@@ -96,7 +96,7 @@ Check curated list of [most important 75 leetcode questions.](https://www.teambl
 ## Matrix
 
 - [x] [Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/)
-- [ ] [Spiral Matrix](https://leetcode.com/problems/spiral-matrix/)
+- [x] [Spiral Matrix](https://leetcode.com/problems/spiral-matrix/)
 - [x] [Rotate Image](https://leetcode.com/problems/rotate-image/)
 - [ ] [Word Search](https://leetcode.com/problems/word-search/)
 
@@ -104,14 +104,14 @@ Check curated list of [most important 75 leetcode questions.](https://www.teambl
 
 ## String
 
-- [ ] [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)
+- [x] [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)
 - [ ] [Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/)
 - [ ] [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/)
 - [x] [Valid Anagram](https://leetcode.com/problems/valid-anagram/)
 - [x] [Group Anagrams](https://leetcode.com/problems/group-anagrams/)
 - [x] [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)
 - [x] [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/)
-- [ ] [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/)
+- [x] [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/)
 - [x] [Palindromic Substrings](https://leetcode.com/problems/palindromic-substrings/)
 - [ ] [Encode and Decode Strings (Leetcode Premium)](https://leetcode.com/problems/encode-and-decode-strings/)
 
