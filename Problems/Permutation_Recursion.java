@@ -1,25 +1,26 @@
-class Permutation {
+# https://leetcode.com/problems/permutations/
+
+class Permutation_Recursion_Stack {
     
     List<List<Integer>> result = new ArrayList<>();
     
     public List<List<Integer>> permute(int[] nums) {
         
-        Stack<Integer> stack = new Stack<Integer>();
-
+        Stack<Integer> stack = new Stack<>();
+        
         boolean[] isTaken = new boolean[nums.length];
         
-        List<List<Integer>> result = new ArrayList<>();
-
-        findCombination(result, stack, isTaken, nums);
+        find(stack, nums, isTaken);
         
         return result;
     }
     
-    private void findCombination(List<List<Integer>> result, Stack<Integer> stack, boolean[] isTaken, int[] nums) {
+    private void find(Stack<Integer> stack, int[] nums, boolean[] isTaken) {
         
         if (stack.size() == nums.length) {
             
             result.add(new ArrayList<>(stack));
+            
             return;
         }
         
@@ -27,15 +28,13 @@ class Permutation {
             
             if (isTaken[i] == false) {
                 
-            	isTaken[i] = true;
-                
                 stack.push(nums[i]);
+                isTaken[i] = true;
                 
-                findCombination(result, stack, isTaken, nums);
-                
-                stack.pop();
+                find(stack, nums, isTaken);
                 
                 isTaken[i] = false;
+                stack.pop();
             }
         }
     }
