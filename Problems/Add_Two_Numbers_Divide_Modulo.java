@@ -8,7 +8,7 @@
  *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
  * }
  */
-class AddTwoNumbers {
+class Add_Two_Numbers_Divide_Modulo {
     
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         
