@@ -1,6 +1,6 @@
 # https://leetcode.com/problems/consecutive-characters/
 
-class ConsecutiveCharacters {
+class Consecutive_Characters {
     
     public int maxPower(String s) {
         
