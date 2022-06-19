@@ -28,7 +28,6 @@ class Middle_Of_Linked_List {
                 
                 fast = fast.next.next;
             }
-            
         }
         
         return slow;
