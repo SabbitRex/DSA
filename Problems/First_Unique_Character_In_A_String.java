@@ -15,6 +15,8 @@ class First_Unique_Character_In_A_String {
 
 			if (map.get(true).contains(s.charAt(i))) {
 
+                map.get(true).add(s.charAt(i));
+                
 				map.get(false).remove(s.charAt(i));
 
 			} else if (!map.get(false).contains(s.charAt(i))) {
