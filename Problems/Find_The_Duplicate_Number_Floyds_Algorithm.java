@@ -4,27 +4,26 @@ class Find_The_Duplicate_Number_Floyds_Algorithm {
     
     public int findDuplicate(int[] nums) {
         
-        int slowIdx = 0;
-        
-        int fastIdx = 0;
+        int turtle = 0;
+        int rabbit = 0;
         
         while (true) {
             
-            slowIdx = nums[slowIdx];
-            fastIdx = nums[nums[fastIdx]];
+            turtle = nums[turtle];
+            rabbit = nums[nums[rabbit]];
             
-            if (slowIdx == fastIdx) {
+            if (turtle == rabbit) {
                 
-                int newSlowIdx = 0;
+                int turtle2 = 0;
                 
                 while (true) {
                     
-                    slowIdx = nums[slowIdx];
-                    newSlowIdx = nums[newSlowIdx];
+                    turtle2 = nums[turtle2];
+                    turtle = nums[turtle];
                     
-                    if (slowIdx == newSlowIdx) {
+                    if (turtle2 == turtle) {
                         
-                        return slowIdx;
+                        return turtle2;
                     }
                 }
             }
