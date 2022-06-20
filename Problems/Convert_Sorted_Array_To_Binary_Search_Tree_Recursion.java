@@ -14,7 +14,9 @@
  * }
  */
 
-class SortedArrayToBinarySearchTree {
+# https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/
+
+class Convert_Sorted_Array_To_Binary_Search_Tree_Recursion {
     
     public TreeNode sortedArrayToBST(int[] nums) {
         
