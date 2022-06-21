@@ -11,7 +11,7 @@
 
 # https://leetcode.com/problems/swap-nodes-in-pairs/
 
-class Solution {
+class Swap_Nodes_In_Pairs_Recursion {
     
     public ListNode swapPairs(ListNode head) {
         
