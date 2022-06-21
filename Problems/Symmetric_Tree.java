@@ -13,8 +13,10 @@
  *     }
  * }
  */
- 
-class SymmetricTree {
+
+# https://leetcode.com/problems/symmetric-tree/
+
+class Symmetric_Tree {
     
     public boolean isSymmetric(TreeNode root) {
         
