@@ -8,8 +8,10 @@
  *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
  * }
  */
- 
-class SwapAdjacentNode {
+
+# https://leetcode.com/problems/swap-nodes-in-pairs/
+
+class Solution {
     
     public ListNode swapPairs(ListNode head) {
         
@@ -18,17 +20,17 @@ class SwapAdjacentNode {
         return head;
     }
     
-    private void swap(ListNode head) {
+    private ListNode swap(ListNode node) {
         
-        if (head == null || head.next == null ) {
+        if (node == null || node.next == null) {
             
-            return;
+            return null;
         }
         
-        int temp = head.val;
-        head.val = head.next.val;
-        head.next.val = temp;
+        int temp = node.val;
+        node.val = node.next.val;
+        node.next.val = temp;
         
-        swap(head.next.next);
+        return swap(node.next.next);
     }
 }
