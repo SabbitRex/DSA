@@ -1,4 +1,4 @@
-class ValidAnagram2 {
+class Valid_Anagram_Sorting {
     
     public boolean isAnagram(String s, String t) {
             
