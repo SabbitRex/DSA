@@ -1,4 +1,6 @@
-class SubsetOfArrayIteration {
+# https://leetcode.com/problems/subsets/
+
+class Subsets_Iteration {
 
     public List<List<Integer>> subsets(int[] nums) {
         
