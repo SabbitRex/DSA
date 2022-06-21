@@ -13,7 +13,10 @@
  *     }
  * }
  */
-class SameTree {
+
+# https://leetcode.com/problems/same-tree/
+
+class Same_Tree_Recursion {
   
     public boolean isSameTree(TreeNode p, TreeNode q) {
         
