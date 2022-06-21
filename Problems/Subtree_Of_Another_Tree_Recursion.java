@@ -18,31 +18,51 @@
 
 class Subtree_Of_Another_Tree_Recursion {
     
+    boolean result = false;
+    
     public boolean isSubtree(TreeNode root, TreeNode subRoot) {
         
-        if (root == null || subRoot == null) {
+        inOrder(root, subRoot);
+        
+        return result;
+    }
+    
+    private void inOrder(TreeNode root, TreeNode subRoot) {
+        
+        if (root != null) {
             
-            return root == null && subRoot == null;
+            inOrder(root.left, subRoot);
             
-        } else if (isIdentical(root, subRoot)) {
+            boolean isMatch = match(root, subRoot);
             
-            return true;
+            if (isMatch) {
+                
+                result =  true;
+            }
             
-        } else {
-            
-            return isSubtree(root.left, subRoot) || isSubtree(root.right, subRoot);
+            inOrder(root.right, subRoot);
         }
     }
     
-    private boolean isIdentical(TreeNode root, TreeNode subRoot) {
+    private boolean match(TreeNode root, TreeNode subRoot) {
         
-        if (root == null || subRoot == null) {
+        if  (root != null && subRoot != null) {
             
-            return root == null && subRoot == null;
+            boolean hasLeftChild = match(root.left, subRoot.left);
+            boolean hasRightChild = match(root.right, subRoot.right);
             
-        } else if (root.val == subRoot.val) {
+            if (root.val == subRoot.val && hasLeftChild && hasRightChild) {
+                
+                return true;
+                
+            } else {
+                
+                return false;
+            }
             
-            return isIdentical(root.left, subRoot.left) && isIdentical(root.right, subRoot.right);
+        } else if (root == null && subRoot == null) {
+            
+            return true;
             
         } else {
             
