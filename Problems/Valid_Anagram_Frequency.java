@@ -1,4 +1,4 @@
-class ValidAnagram {
+class Valid_Anagram_Frequency {
     
     public boolean isAnagram(String s, String t) {
         
