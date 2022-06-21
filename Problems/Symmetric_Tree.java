@@ -40,6 +40,5 @@ class Symmetric_Tree {
         }
         
         return node1.val == node2.val && check(node1.left, node2.right) && check(node1.right, node2.left);
-        
     }
 }
