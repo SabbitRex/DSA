@@ -1,4 +1,6 @@
-class SingleNumber {
+# https://leetcode.com/problems/single-number/
+
+class Single_Number_HashSet {
 
     public int singleNumber(int[] nums) {
         
