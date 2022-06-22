@@ -1,4 +1,4 @@
-class Sort_Characters_In_Array {
+class Sort_Characters_Array {
 
 	public List<Character> sort(char[] arr) {
 		
