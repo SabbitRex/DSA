@@ -1,4 +1,6 @@
-class SortAnArray {
+# https://leetcode.com/problems/sort-an-array/
+
+class Sort_An_Array_Merge_Sort {
     
     public int[] sortArray(int[] nums) {
         
