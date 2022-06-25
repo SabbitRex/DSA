@@ -35,7 +35,7 @@ class Merge_Sorted_Array_Start_From_End {
             insertPosition--;
         }
         
-        // Fill letf over of nums2 to nums1 incase there is any
+        // Fill left over of nums2 to nums1 incase there is any
         while (idx2 >= 0) {
             
             nums1[insertPosition] = nums2[idx2];
