@@ -1,6 +1,6 @@
 # https://leetcode.com/problems/merge-sorted-array/
 
-class Merge_Two_Sorted_Array {
+class Merge_Two_Sorted_Array_Naive {
 
     public void merge(int[] arr1, int m, int[] arr2, int n) {
         
