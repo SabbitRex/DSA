@@ -62,17 +62,4 @@ class Find_All_Anagrams_In_A_String_Sliding_Window_HashMap {
         
         return result;
     }
-    
-    private static boolean compareMap(Map<Character, Integer> pCharCount, Map<Character, Integer> sCharCount) {
-    	
-    	for (char c : sCharCount.keySet()) {
-    		
-    		if (pCharCount.get(c) != sCharCount.get(c)) {
-    			
-    			return false;
-    		}
-    	}
-    	
-    	return true;
-    }
 }
