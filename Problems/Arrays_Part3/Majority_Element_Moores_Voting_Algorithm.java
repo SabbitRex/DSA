@@ -14,7 +14,7 @@ class Majority_Element_Moores_Voting_Algorithm {
                 result = num;
             }
             
-            if (result != num) {
+            if (result == num) {
                 
                 count++;
                 
