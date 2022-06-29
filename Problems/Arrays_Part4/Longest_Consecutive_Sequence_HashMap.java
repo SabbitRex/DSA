@@ -6,7 +6,7 @@ class Longest_Consecutive_Sequence_HashMap {
         
         Map<Integer, Boolean> map = new HashMap<>();
         
-        // Set all map value to true
+        // Set all map value to true 
         for (int num : nums) {
             
             map.put(num, true);
