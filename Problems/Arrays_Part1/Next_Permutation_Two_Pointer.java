@@ -11,39 +11,36 @@ class Next_Permutation_Two_Pointer {
         
         int current = nums.length - 2;
         
-        // Find first idx where nums[current] is less than nums[current+1]
-        while (current >= 0 && nums[current] >= nums[current+1]) {
+        while (current >= 0 && nums[current] >= nums[current + 1]) {
             
             current--;
         }
         
-        // Find first bigger element than nums[current] from back
         if (current >= 0) {
             
-            int c = nums.length-1;
+            int newCurrent = nums.length - 1;
             
-            while (nums[current] >= nums[c]) {
-                
-                c--;
+            while (nums[current] >= nums[newCurrent]) {
+            
+                newCurrent--;
             }
             
-            // Swap first bigger element from back and nums[current]
             int temp = nums[current];
-            nums[current] = nums[c];
-            nums[c] = temp;
+            nums[current] = nums[newCurrent];
+            nums[newCurrent] = temp;
         }
         
-        int lastIdx = nums.length-1;
-        int nextToCurrent = current+1;
+        int swapFrom = current + 1;
+        int swapTo = nums.length - 1;
         
-        // Reverse nums[current+1] to last idx of array
-        while (nextToCurrent < lastIdx) {
+        while (swapFrom < swapTo) {
             
-            int temp = nums[nextToCurrent];
-            nums[nextToCurrent] = nums[lastIdx];
-            nums[lastIdx] = temp;
-            lastIdx--;
-            nextToCurrent++;
+            int temp = nums[swapFrom];
+            nums[swapFrom] = nums[swapTo];
+            nums[swapTo] = temp;
+            
+            swapFrom++;
+            swapTo--;
         }
     }
 }
