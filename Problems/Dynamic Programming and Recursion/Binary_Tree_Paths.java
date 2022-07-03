@@ -29,7 +29,7 @@ class Binary_Tree_Paths {
         
         String path = "";
         
-        dfs(root, "", result);
+        dfs(root, path, result);
         
         return result;
     }
