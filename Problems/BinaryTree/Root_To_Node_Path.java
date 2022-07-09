@@ -1,44 +1,45 @@
 # https://www.interviewbit.com/problems/path-to-given-node/
 
-class Root_To_Node_Path {
+public class Root_To_Node_Path {
     
-    public List<Integer> rootToNodePath(TreeNode root, TreeNode node) {
+    public ArrayList<Integer> solve(TreeNode A, int B) {
         
-        if (root == null) {
+        ArrayList<Integer> result = new ArrayList<>();
+        
+        if (A == null) {
             
-            return null;
+            return result;
         }
         
-        List<Integer> path = new ArrayList<>();
+        getPath(A, result, B);
         
-        getPath(root, path, node.val);
-        
-        return path;
+        return result;
     }
     
-    private boolean getPath(TreeNode current, List<Integer> path, int value) {
-             
-        if (current == null) {
+    private boolean getPath(TreeNode node, ArrayList<Integer> result, int target) {
+        
+        if (node == null) {
             
             return false;
         }
         
-        path.add(current.val);
+        result.add(node.val);
         
-        if (current.val == value) {
+        if (node.val == target) {
             
             return true;
         }
         
-        boolean isValueOnLeftSubTree = getPath(current.left, path, value);
-        boolean isValueOnRightSubTree = getPath(current.right, path, value);
+        boolean isTargetOnLeft = getPath(node.left, result, target);
+        boolean isTargetOnRight = getPath(node.right, result, target);
         
-        if (isValueOnLeftSubTree || isValueOnRightSubTree) {
+        if (isTargetOnLeft || isTargetOnRight) {
             
-            return true;
+            return true;   
         }
         
-        path.remove(path.size() - 1);
+        result.remove(result.size() - 1);
+        
         return false;
     }
 }
