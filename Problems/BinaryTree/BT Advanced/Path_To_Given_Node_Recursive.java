@@ -1,6 +1,6 @@
 # https://www.interviewbit.com/problems/path-to-given-node/
 
-public class Root_To_Node_Path_Recursive {
+public class Path_To_Given_Node_Recursive {
     
     public ArrayList<Integer> solve(TreeNode A, int B) {
         
