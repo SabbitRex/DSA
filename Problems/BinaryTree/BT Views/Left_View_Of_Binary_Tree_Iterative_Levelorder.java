@@ -14,9 +14,9 @@ class Left_View_Of_Binary_Tree_Iterative_Levelorder {
         }
     }
     
-    public ArrayList<Integer> leftView(Node root) {
+    public List<Integer> leftView(Node root) {
       
-        ArrayList<Integer> result = new ArrayList<>();
+        List<Integer> result = new ArrayList<>();
       
         if (root == null) {
           
