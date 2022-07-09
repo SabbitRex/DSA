@@ -1,6 +1,6 @@
 # https://practice.geeksforgeeks.org/problems/bottom-view-of-binary-tree/1
 
-class Bottom_View_Of_Binary_Tree_Iterative {
+class Bottom_View_Of_Binary_Tree_Iterative_Levelorder {
     
     static class Pair {
         
