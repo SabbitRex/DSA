@@ -16,7 +16,7 @@
 
 # https://leetcode.com/problems/binary-tree-level-order-traversal-ii/
 
-class Binary_Tree_Level_Order_Traversal_II {
+class Binary_Tree_Levelorder_Traversal_II {
     
     public List<List<Integer>> levelOrderBottom(TreeNode root) {
         
