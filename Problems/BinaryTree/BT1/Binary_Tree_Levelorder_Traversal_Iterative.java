@@ -16,7 +16,7 @@
 
 # https://leetcode.com/problems/binary-tree-level-order-traversal/
 
-class Binary_Tree_LevelOrder_Traversal_Iterative {
+class Binary_Tree_Levelorder_Traversal_Iterative {
     
     public List<List<Integer>> levelOrder(TreeNode root) {
         
