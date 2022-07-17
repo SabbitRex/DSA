@@ -20,9 +20,9 @@ class Longest_Increasing_Subsequence_DP {
                 if (nums[i] > nums[j]) {
                     
                     dp[i] = Math.max(dp[i], dp[j] + 1);
-                    
-                    globalMax = Math.max(dp[i], globalMax);
                 }
+                
+                globalMax = Math.max(dp[i], globalMax);
             }
         }
         
