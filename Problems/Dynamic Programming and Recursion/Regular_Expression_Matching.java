@@ -16,7 +16,7 @@ class Regular_Expression_Matching {
         // Fill 1st row before hand.
 		for (int i=1; i<=p.length(); i++) {
             
-            // If in any column you get '*' then for that column, in the same row got 2 index back.
+            // If in any column you get '*' then for that column, in the same row go 2 index back.
             if (p.charAt(i-1) == '*') {
                 
                 dp[0][i] = dp[0][i-2];	
@@ -34,7 +34,8 @@ class Regular_Expression_Matching {
                     
                 } else if (p.charAt(j-1) == '*') {
                     
-                    // If in any column you get '*' then for that column, in the same row go 2 index back. OR (if this result is false)
+                    // If in any column you get '*'
+					// In the same row go 2 index back, check if true OR (if this result is false then)
                     // Check immediate previous of current p column and see if it matches with current s index AND
                     // One above the current column should be true
                     dp[i][j] = dp[i][j-2] || ((s.charAt(i-1) == p.charAt(j-2) || p.charAt(j-2) == '.') && dp[i-1][j]);    
