@@ -4,56 +4,59 @@ class Number_Of_Islands_Recursion {
     
     public int numIslands(char[][] grid) {
         
-        int n = grid.length;
+        int count = 0;
         
-        int m = grid[0].length;
+        int m = grid.length;
+        int n = grid[0].length;
         
-        int countIsland = 0;
-        
-        for (int i=0; i<n; i++) {
+        for (int i=0; i<m; i++) {
             
-            for (int j=0; j<m; j++) {
+            for (int j=0; j<n; j++) {
                 
                 if (grid[i][j] == '1') {
                     
-                    countIsland++;
+                    count++;
                     
-                    visitRecursively(i, j, n, m, grid);
+                    dfs(i, j, grid, m, n);
                 }
             }
         }
         
-        return countIsland;
+        return count;
     }
     
-    private void visitRecursively(int i, int j, int n, int m, char[][] grid) {
+    private void dfs(int i, int j, char[][] grid, int m, int n) {
         
         grid[i][j] = '0';
         
-        if(isAValidIndex(i+1, j, n, m, grid)) {
+        // CHECK UP
+        if (isValidIndex(i+1, j, grid, m, n)) {
             
-            visitRecursively(i+1, j, n, m, grid);
+            dfs(i+1, j, grid, m, n);
         }
         
-        if(isAValidIndex(i-1, j, n, m, grid)) {
+        // CHECK DOWN
+        if (isValidIndex(i-1, j, grid, m, n)) {
             
-            visitRecursively(i-1, j, n, m, grid);
+            dfs(i-1, j, grid, m, n);
         }
         
-        if(isAValidIndex(i, j+1, n, m, grid)) {
+        // CHECK RIGHT
+        if (isValidIndex(i, j+1, grid, m, n)) {
             
-            visitRecursively(i, j+1, n, m, grid);
+            dfs(i, j+1, grid, m, n);
         }
         
-        if(isAValidIndex(i, j-1, n, m, grid)) {
+        // CHECK LEFT
+        if (isValidIndex(i, j-1, grid, m, n)) {
             
-            visitRecursively(i, j-1, n, m, grid);
+            dfs(i, j-1, grid, m, n);
         }
     }
     
-    private boolean isAValidIndex(int i, int j, int n, int m, char[][] grid) {
+    private boolean isValidIndex(int i, int j, char[][] grid, int m, int n) {
         
-        if (i>=0 && i<n && j>=0 && j<m && grid[i][j] == '1') {
+        if (i >= 0 && i <m && j>=0 && j<n && grid[i][j] == '1') {
             
             return true;
         }
