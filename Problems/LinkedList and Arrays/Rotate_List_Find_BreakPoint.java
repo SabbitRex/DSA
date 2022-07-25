@@ -24,7 +24,7 @@ class Rotate_List_Find_BreakPoint {
         
         int size = 1;
         
-        // Walk to second last node (till current.next != null) and get size of list
+        // Walk to last node (till current.next != null) and get size of list
         while (current.next != null) {
             
             size++;
