@@ -16,7 +16,7 @@ class Merge_Intervals {
         int initialStart = initialPair[0];
         int initialEnd = initialPair[1];
         
-        int idx = 0;
+        int idx = 1;
         
         // Merge overlaps
         while (idx < intervals.length) {
