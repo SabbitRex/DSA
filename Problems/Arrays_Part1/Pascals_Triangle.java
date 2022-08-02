@@ -14,7 +14,7 @@ class Pascals_Triangle {
             
             for (int j=0; j<=i; j++) {
             
-                if (j==0 || j == i) {
+                if (j == 0 || j == i) {
 
                     currentRow.add(1);
 
