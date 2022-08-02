@@ -4,46 +4,37 @@ class Merge_Intervals {
     
     public int[][] merge(int[][] intervals) {
     
-        // Sort based on intervals[index][0]
-        Arrays.sort(intervals, (interval1, interval2) -> Integer.compare(interval1[0], interval2[0]));
+        Arrays.sort(intervals, (A, B) -> Integer.compare(A[0], B[0]));
+        
+        int[] initialPair = intervals[0];
+        
+        int initStart = initialPair[0];
+        int initEnd = initialPair[1];
         
         List<int[]> result = new ArrayList<>();
         
-        // Remember initial pair
-        int[] initialPair = intervals[0];
-        
-        // Get initial start idx and end idx
-        int initialStart = initialPair[0];
-        int initialEnd = initialPair[1];
-        
-        int idx = 1;
-        
-        // Merge overlaps
-        while (idx < intervals.length) {
+        for (int i=1; i<intervals.length; i++) {
             
-            int[] current = intervals[idx];
+            int[] currentPair = intervals[i];
             
-            int currentStart = current[0];
-            int currentEnd = current[1];
+            int currentStart = currentPair[0];
+            int currentEnd = currentPair[1];
             
-            if (currentStart <= initialEnd) {
+            if (initEnd >= currentStart) {
                 
-                initialEnd = Math.max(initialEnd, currentEnd);
+                initEnd = Math.max(initEnd, currentEnd);
                 
             } else {
                 
-                result.add(new int[] {initialStart, initialEnd});
+                result.add(new int[] {initStart, initEnd});
                 
-                initialStart = currentStart;
-                
-                initialEnd = currentEnd;
+                initStart = currentStart;
+                initEnd = currentEnd;
             }
-            
-            idx++;
         }
         
-        result.add(new int[] {initialStart, initialEnd});
+        result.add(new int[] {initStart, initEnd});
         
-        return result.toArray(new int[result.size()-1][]);
+        return result.toArray(new int[result.size() - 1][]);
     }
 }
