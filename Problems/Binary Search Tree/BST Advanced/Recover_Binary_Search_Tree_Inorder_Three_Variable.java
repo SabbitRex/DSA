@@ -1,5 +1,5 @@
 # https://leetcode.com/problems/recover-binary-search-tree/ 
-
+    
 /**
  * Definition for a binary tree node.
  * public class TreeNode {
@@ -18,56 +18,53 @@
 
 class Recover_Binary_Search_Tree_Inorder_Three_Variable {
     
-    List<Integer> list = new ArrayList<>();
-    
-    TreeNode previous;
-    TreeNode first;
-    TreeNode middle;
-    TreeNode last;
+    TreeNode voilation1 = null;
+    TreeNode voilation2 = null;
+    TreeNode voilation3 = null;
+    TreeNode previous = null;
     
     public void recoverTree(TreeNode root) {
         
-        previous = new TreeNode(Integer.MIN_VALUE);
+        inorder(root);
         
-        inOrder(root);
-        
-        if (first != null && last != null) {
+        if (voilation1 !=null && voilation3 != null) {
             
-            int temp = first.val;
-            first.val = last.val;
-            last.val = temp;
+            int temp = voilation1.val;
+            voilation1.val = voilation3.val;
+            voilation3.val = temp;
             
-        } else if (first !=null && middle != null) {
+        } else if (voilation1 != null && voilation2 != null) {
             
-            int temp = first.val;
-            first.val = middle.val;
-            middle.val = temp;
-        }
+            int temp = voilation1.val;
+            voilation1.val = voilation2.val;
+            voilation2.val = temp;      
+        } 
     }
     
-    private void inOrder(TreeNode current) {
+    private void inorder(TreeNode current) {
         
         if (current == null) {
             
             return;
         }
         
-        inOrder(current.left);
+        inorder(current.left);
         
-        if (previous !=null && (current.val < previous.val)) {
+        if (previous != null && previous.val > current.val) {
             
-            if (first == null) {
+            if (voilation1 == null) {
                 
-                first = previous;
-                middle = current;
+                voilation1 = previous;
+                voilation2 = current;
                 
             } else {
                 
-                last = current;
+                voilation3 = current;
             }
         }
         
         previous = current;
-        inOrder(current.right);
+        
+        inorder(current.right);
     }
 }
