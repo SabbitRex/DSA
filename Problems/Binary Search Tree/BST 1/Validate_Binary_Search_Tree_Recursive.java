@@ -20,26 +20,21 @@ class Validate_Binary_Search_Tree_Recursive {
     
     public boolean isValidBST(TreeNode root) {
         
-        if (root == null) {
-            
-            return true;
-        }
-        
-        return valid(root, Long.MIN_VALUE, Long.MAX_VALUE);
+        return validate(root, Long.MIN_VALUE, Long.MAX_VALUE);
     }
     
-    private boolean valid(TreeNode node, long minVal, long maxVal) {
+    private boolean validate(TreeNode root, long minVal, long maxVal) {
         
-        if (node == null) {
+        if (root == null) {
             
-            return true;
+            return true; 
         }
         
-        if (minVal >= node.val || maxVal <= node.val) {
+        if (root.val <= minVal || root.val >= maxVal) {
             
-            return false;
+            return false;      
         }
         
-        return valid(node.left, minVal, node.val) && valid(node.right, node.val, maxVal);  
+        return validate(root.left, minVal, root.val) && validate(root.right, root.val, maxVal);
     }
 }
