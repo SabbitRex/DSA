@@ -4,14 +4,11 @@ class Longest_Increasing_Subsequence_DP {
     
     public int lengthOfLIS(int[] nums) {
         
+        int result = 1;
+        
         int[] dp = new int[nums.length];
         
-        for (int i=0; i<dp.length; i++) {
-            
-            dp[i] = 1;    
-        }
-        
-        int globalMax = 1;
+        Arrays.fill(dp, 1);
         
         for (int i=1; i<nums.length; i++) {
             
@@ -21,11 +18,11 @@ class Longest_Increasing_Subsequence_DP {
                     
                     dp[i] = Math.max(dp[i], dp[j] + 1);
                 }
-                
-                globalMax = Math.max(dp[i], globalMax);
             }
+            
+            result = Math.max(dp[i], result);
         }
         
-        return globalMax;
+        return result;
     }
 }
