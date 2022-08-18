@@ -16,7 +16,7 @@
 
 # https://leetcode.com/problems/binary-tree-right-side-view/
 
-class Binary_Tree_Right_Side_View_Iterative_Levelorder {
+class Right_View_Of_Binary_Tree_Iterative_Levelorder {
     
     static class Pair {
         
