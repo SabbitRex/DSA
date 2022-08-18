@@ -16,7 +16,7 @@
 
 # https://leetcode.com/problems/maximum-depth-of-binary-tree/
 
-class Maximum_Depth_Of_Binary_Tree {
+class Maximum_Depth_Of_Binary_Tree_Recursion {
     
     public int maxDepth(TreeNode root) {
         
