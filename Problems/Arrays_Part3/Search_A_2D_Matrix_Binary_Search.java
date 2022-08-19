@@ -2,58 +2,45 @@
 
 class Search_A_2D_Matrix_Binary_Search {
     
-    public static boolean searchMatrix(int[][] matrix, int target) {
+    public List<Integer> majorityElement(int[] nums) {
         
-        // Levels
-        int m = matrix.length;
+        List<Integer> result = new ArrayList<>();
         
-        // Elements in each level
-        int n = matrix[0].length - 1;
-        
-        boolean isPresent = false;
-        
-        for (int i=0; i<m; i++) {
+        if (nums.length == 1) {
             
-			// Check if element at last of each level is bigger or equal to target
-            if (target <= matrix[i][n]) {
-                
-                isPresent = binarySearch(target, matrix[i]);
-                
-                break;
-            }
+            result.add(nums[0]);
+            
+            return result;
         }
         
-        return isPresent;
-    }
-    
-    private static boolean binarySearch(int target, int[] matrix) {
+        int freq = nums.length/3;
         
-        int start = 0;
-        int end = matrix.length - 1;
+        Map<Integer, Integer> map = new HashMap<>();
         
-        boolean isElementFound = false;
-        
-        int mid = (start + end)/2;
-        
-        while (start <= end) {
+        for (int num : nums) {
             
-            if (matrix[mid] > target) {
+            int count = 0;
+            
+            if (map.containsKey(num)) {
                 
-                end = mid - 1;
+                count = map.get(num) + 1;
                 
-            } else if (matrix[mid] < target) {
-                
-                start = mid + 1;
+                map.put(num, count);
                 
             } else {
                 
-                isElementFound = true;
-                break;
+                map.put(num, 1);
             }
-            
-            mid = (start + end)/2;
         }
         
-        return isElementFound;
+        for (Integer i : map.keySet()) {
+            
+            if (map.get(i) > nums.length/3) {
+                
+                result.add(i);
+            }             
+        }
+        
+        return result;
     }
 }
