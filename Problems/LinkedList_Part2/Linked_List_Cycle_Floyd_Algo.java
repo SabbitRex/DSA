@@ -22,7 +22,7 @@ public class Linked_List_Cycle_Floyd_Algo {
         
         boolean isLoop = false;
         
-        while (slow != null && fast != null && fast.next != null) {
+        while (fast != null && fast.next != null) {
             
             slow = slow.next;
             fast = fast.next.next;
