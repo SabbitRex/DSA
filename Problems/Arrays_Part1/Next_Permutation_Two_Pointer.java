@@ -11,36 +11,36 @@ class Next_Permutation_Two_Pointer {
         
         int current = nums.length - 2;
         
-        while (current >= 0 && nums[current] >= nums[current + 1]) {
+        while (current >=0 && nums[current] >= nums[current + 1]) {
             
             current--;
         }
         
-        if (current >= 0) {
+        if (current >=0) {
             
-            int newCurrent = nums.length - 1;
+            int idx = nums.length - 1;
             
-            while (nums[current] >= nums[newCurrent]) {
-            
-                newCurrent--;
+            while (nums[current] >= nums[idx]) {
+                
+                idx--;
             }
             
             int temp = nums[current];
-            nums[current] = nums[newCurrent];
-            nums[newCurrent] = temp;
+            nums[current] = nums[idx];
+            nums[idx] = temp;
         }
         
-        int swapFrom = current + 1;
-        int swapTo = nums.length - 1;
+        int swapStart = current + 1;
+        int swapEnd = nums.length - 1;
         
-        while (swapFrom < swapTo) {
+        while (swapStart < swapEnd) {
             
-            int temp = nums[swapFrom];
-            nums[swapFrom] = nums[swapTo];
-            nums[swapTo] = temp;
+            int temp = nums[swapStart];
+            nums[swapStart] = nums[swapEnd];
+            nums[swapEnd] = temp;
             
-            swapFrom++;
-            swapTo--;
+            swapStart++;
+            swapEnd--;
         }
     }
 }
