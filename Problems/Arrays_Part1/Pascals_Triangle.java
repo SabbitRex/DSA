@@ -6,26 +6,26 @@ class Pascals_Triangle {
         
         List<List<Integer>> result = new ArrayList<>();
         
-        List<Integer> previousRow = new ArrayList<>();
+        List<Integer> previous = new ArrayList<>();
         
         for (int i=0; i<numRows; i++) {
             
-            List<Integer> currentRow = new ArrayList<>();
+            List<Integer> current = new ArrayList<>();
             
             for (int j=0; j<=i; j++) {
-            
-                if (j == 0 || j == i) {
-
-                    currentRow.add(1);
-
+                
+                if (j==0 || j==i) {
+                    
+                    current.add(1);
+                    
                 } else {
-
-                    currentRow.add(previousRow.get(j-1) + previousRow.get(j));
+                    
+                    current.add(previous.get(j) + previous.get(j-1));
                 }
             }
             
-            previousRow = currentRow;
-            result.add(currentRow);
+            previous = current;
+            result.add(current);
         }
         
         return result;
