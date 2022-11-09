@@ -2,7 +2,7 @@ class SingletonEagerInit {
 	
 	private static SingletonEagerInit instance = new SingletonEagerInit();
 	
-	private SingletonEagerInit( ) {}
+	private SingletonEagerInit() {}
 	
 	public static SingletonEagerInit getInstance() {
 		
