@@ -1,3 +1,5 @@
+# https://leetcode.com/problems/optimal-partition-of-string/
+
 class Solution {
     public int partitionString(String s) {
         
